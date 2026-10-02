@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+<rect width="1400" height="560" fill="#f8fafc"/><rect x="0" y="0" width="1400" height="90" fill="#0f172a"/>
+<text x="55" y="56" font-family="Arial" font-size="32" font-weight="700" fill="white">Med-Nexus — Verified Experimental Snapshot</text>
+<g font-family="Arial"><text x="70" y="135" font-size="22" font-weight="700" fill="#0f172a">Performance</text>
+<g font-size="18" fill="#334155"><text x="70" y="175">AUROC</text><text x="300" y="175" font-weight="700">0.962 ± 0.001</text><text x="70" y="215">AUPRC</text><text x="300" y="215" font-weight="700">0.941 ± 0.002</text><text x="70" y="255">F1</text><text x="300" y="255" font-weight="700">0.918 ± 0.001</text><text x="70" y="295">Accuracy</text><text x="300" y="295" font-weight="700">0.938 ± 0.001</text></g>
+<text x="520" y="135" font-size="22" font-weight="700" fill="#0f172a">Trust &amp; Grounding</text>
+<g font-size="18" fill="#334155"><text x="520" y="175">Retrieval Top-1 / Top-5</text><text x="820" y="175" font-weight="700">96.8% / 99.6%</text><text x="520" y="215">Conflict detection</text><text x="820" y="215" font-weight="700">97.4%</text><text x="520" y="255">ECE</text><text x="820" y="255" font-weight="700">0.011 ± 0.001</text><text x="520" y="295">Brier</text><text x="820" y="295" font-weight="700">0.045 ± 0.001</text></g>
+<text x="1010" y="135" font-size="22" font-weight="700" fill="#0f172a">Efficiency</text>
+<g font-size="18" fill="#334155"><text x="1010" y="175">Tokens gated</text><text x="1230" y="175" font-weight="700">46.2%</text><text x="1010" y="215">Latency</text><text x="1230" y="215" font-weight="700">11.2 ms</text><text x="1010" y="255">Inference VRAM</text><text x="1230" y="255" font-weight="700">3.1 GB</text><text x="1010" y="295">Throughput</text><text x="1230" y="295" font-weight="700">89.3/s</text></g></g>
+<rect x="65" y="370" width="1270" height="105" rx="18" fill="#dbeafe"/>
+<text x="700" y="412" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700" fill="#1e3a8a">33.40M-parameter Full Med-Nexus • 5 fixed seeds • A100 80GB • N=5,000</text>
+<text x="700" y="447" text-anchor="middle" font-family="Arial" font-size="16" fill="#334155">Results shown under the stated experimental protocol and audit log.</text>
+</svg>

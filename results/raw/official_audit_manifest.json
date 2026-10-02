@@ -1,0 +1,22 @@
+{
+  "hardware": "1x NVIDIA A100-SXM4-80GB",
+  "provider": "Vast.ai",
+  "seeds": [42,123,456,789,2024],
+  "test_n": 5000,
+  "max_sequence_length": 2048,
+  "precision": "AMP-bf16",
+  "batch_size_per_gpu": 32,
+  "effective_batch_size": 64,
+  "epochs": 100,
+  "total_steps": 12500,
+  "warmup_steps": 1000,
+  "optimizer": "AdamW",
+  "betas": [0.9,0.999],
+  "weight_decay": 0.05,
+  "peak_lr": 0.0003,
+  "final_run": "MN-RUN-06",
+  "final_params_m": 33.40,
+  "final_auroc": "0.962 +/- 0.001",
+  "final_auprc": "0.941 +/- 0.002",
+  "final_f1": "0.918 +/- 0.001"
+}

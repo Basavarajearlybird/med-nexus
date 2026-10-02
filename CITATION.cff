@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Med-Nexus: Trustworthy Multimodal Medical Image Analysis"
+type: software
+authors:
+  - family-names: Patnaik
+    given-names: Nandan
+version: "1.0.0"
+date-released: 2026-09-30
+license: MIT

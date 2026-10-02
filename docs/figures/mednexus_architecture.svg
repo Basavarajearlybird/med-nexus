@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".18"/></filter></defs>
+<rect width="1400" height="720" fill="#f8fafc"/>
+<rect x="0" y="0" width="1400" height="115" fill="url(#g)"/>
+<text x="70" y="58" font-family="Arial" font-size="38" font-weight="700" fill="white">Med-Nexus</text>
+<text x="70" y="91" font-family="Arial" font-size="18" fill="#cbd5e1">Trustworthy multimodal medical image analysis</text>
+<g font-family="Arial" text-anchor="middle" filter="url(#s)">
+<g><rect x="55" y="175" width="190" height="100" rx="18" fill="white"/><text x="150" y="215" font-size="18" font-weight="700" fill="#0f172a">Medical Image</text><text x="150" y="245" font-size="15" fill="#475569">Visual evidence</text></g>
+<g><rect x="55" y="325" width="190" height="100" rx="18" fill="white"/><text x="150" y="365" font-size="18" font-weight="700" fill="#0f172a">Clinical Query</text><text x="150" y="395" font-size="15" fill="#475569">Text / context</text></g>
+<g><rect x="315" y="230" width="220" height="145" rx="18" fill="#dbeafe"/><text x="425" y="275" font-size="19" font-weight="700" fill="#1e3a8a">Multimodal Encoding</text><text x="425" y="307" font-size="15" fill="#334155">Vision + language</text><text x="425" y="333" font-size="15" fill="#334155">representations</text></g>
+<g><rect x="605" y="155" width="220" height="120" rx="18" fill="#dcfce7"/><text x="715" y="197" font-size="19" font-weight="700" fill="#166534">Evidence Retrieval</text><text x="715" y="228" font-size="15" fill="#334155">Relevant clinical</text><text x="715" y="252" font-size="15" fill="#334155">knowledge</text></g>
+<g><rect x="605" y="330" width="220" height="120" rx="18" fill="#fef3c7"/><text x="715" y="372" font-size="19" font-weight="700" fill="#92400e">Conflict Analysis</text><text x="715" y="403" font-size="15" fill="#334155">Image ↔ evidence</text><text x="715" y="427" font-size="15" fill="#334155">consistency</text></g>
+<g><rect x="895" y="230" width="220" height="145" rx="18" fill="#ede9fe"/><text x="1005" y="272" font-size="19" font-weight="700" fill="#5b21b6">Contribution-Aware</text><text x="1005" y="300" font-size="19" font-weight="700" fill="#5b21b6">Attention</text><text x="1005" y="330" font-size="15" fill="#334155">Intervention ΔLoss</text><text x="1005" y="354" font-size="15" fill="#334155">+ gating</text></g>
+<g><rect x="1185" y="230" width="160" height="145" rx="18" fill="#0f172a"/><text x="1265" y="272" font-size="18" font-weight="700" fill="white">Prediction</text><text x="1265" y="302" font-size="15" fill="#cbd5e1">Diagnosis</text><text x="1265" y="329" font-size="15" fill="#cbd5e1">Reliability</text><text x="1265" y="356" font-size="15" fill="#cbd5e1">Calibration</text></g>
+</g>
+<g stroke="#64748b" stroke-width="4" fill="none" marker-end="url(#a)"><path d="M245 225 L315 275"/><path d="M245 375 L315 330"/><path d="M535 275 L605 215"/><path d="M535 330 L605 390"/><path d="M825 215 L895 275"/><path d="M825 390 L895 330"/><path d="M1115 302 L1185 302"/></g>
+<text x="700" y="535" font-family="Arial" font-size="20" font-weight="700" fill="#0f172a" text-anchor="middle">Project 2 → trustworthy grounding &amp; conflict analysis</text>
+<text x="700" y="570" font-family="Arial" font-size="20" font-weight="700" fill="#0f172a" text-anchor="middle">Project 4 → intervention-based contribution &amp; efficient attention</text>
+<text x="700" y="625" font-family="Arial" font-size="17" fill="#475569" text-anchor="middle">Med-Nexus evaluates diagnostic performance, evidence reliability, calibration and inference efficiency together.</text>
+</svg>

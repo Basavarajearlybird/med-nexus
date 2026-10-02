@@ -1,0 +1,8 @@
+services:
+  med-nexus:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MED_NEXUS_PRETRAINED: "1"
+    restart: unless-stopped
