@@ -55,11 +55,7 @@ Attention interactions are evaluated through task-loss intervention rather than 
 For an interaction between positions \(i\) and \(j\):
 
 $$
-\Delta_{ij}
-=
-\mathcal{L}(\mathrm{mask}(i,j))
--
-\mathcal{L}(\mathrm{dense})
+\Delta_{ij} = \mathcal{L}(\mathrm{mask}(i,j)) - \mathcal{L}(\mathrm{dense})
 $$
 
 where the intervention removes or masks the selected interaction and the resulting task loss is compared with the dense reference.
@@ -235,11 +231,7 @@ The documented evaluation was performed using the following configuration:
 The documented intervention definition is:
 
 $$
-\Delta Loss
-=
-L_{\mathrm{intervened}}
--
-L_{\mathrm{clean}}
+\Delta \mathcal{L} = L_{\mathrm{intervened}} - L_{\mathrm{clean}}
 $$
 
 Under this definition, a negative value means the intervened condition has lower loss than the clean reference for the stated experimental comparison.
@@ -264,15 +256,13 @@ Relative to the intervention-only configuration:
 **Latency reduction**
 
 $$
-\frac{24.8-11.2}{24.8}\times100
-\approx54.8\%
+\frac{24.8 - 11.2}{24.8}\times100 \approx 54.8\%
 $$
 
 **Inference VRAM reduction**
 
 $$
-\frac{5.7-3.1}{5.7}\times100
-\approx45.6\%
+\frac{5.7 - 3.1}{5.7}\times100 \approx 45.6\%
 $$
 
 ---
