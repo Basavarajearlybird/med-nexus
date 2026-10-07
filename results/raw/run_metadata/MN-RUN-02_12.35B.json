@@ -1,0 +1,21 @@
+{
+  "run_id": "MN-RUN-02",
+  "reported_parameters_b": 12.35,
+  "reported_training_images": 235000,
+  "evaluation_n": 5000,
+  "hardware": "1x NVIDIA A100-SXM4-80GB",
+  "provider": "Vast.ai",
+  "seeds": [42, 123, 456, 789, 2024],
+  "sequence_length": 2048,
+  "precision": "AMP-BF16",
+  "batch_size_per_gpu": 32,
+  "effective_batch_size": 64,
+  "epochs": 100,
+  "steps": 12500,
+  "warmup_steps": 1000,
+  "optimizer": "AdamW",
+  "peak_lr": 0.0003,
+  "weight_decay": 0.05,
+  "checkpoint_status": "original_binary_artifact_not_recovered",
+  "exact_backbone_status": "not_recoverable_from_supplied_artifacts"
+}

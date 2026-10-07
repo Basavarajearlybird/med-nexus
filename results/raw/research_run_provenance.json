@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "source": "supplied_official_audit_manifest",
+  "reported_runs": [
+    {
+      "run_id": "MN-RUN-01",
+      "label": "8B Baseline",
+      "parameters_b": 8.12,
+      "checkpoint": null,
+      "checkpoint_sha256": null,
+      "backbone": null
+    },
+    {
+      "run_id": "MN-RUN-02",
+      "label": "12B Baseline",
+      "parameters_b": 12.35,
+      "checkpoint": null,
+      "checkpoint_sha256": null,
+      "backbone": null
+    },
+    {
+      "run_id": "MN-RUN-03",
+      "label": "32B Dense Baseline",
+      "parameters_b": 32.1,
+      "checkpoint": null,
+      "checkpoint_sha256": null,
+      "backbone": null
+    },
+    {
+      "run_id": "MN-RUN-04",
+      "label": "+ Overlap Suppression",
+      "parameters_b": 32.65,
+      "checkpoint": null,
+      "checkpoint_sha256": null,
+      "backbone": null
+    },
+    {
+      "run_id": "MN-RUN-05",
+      "label": "+ Intervention DeltaLoss",
+      "parameters_b": 33.12,
+      "checkpoint": null,
+      "checkpoint_sha256": null,
+      "backbone": null
+    },
+    {
+      "run_id": "MN-RUN-06",
+      "label": "Full Med-Nexus (Gated)",
+      "parameters_b": 33.4,
+      "checkpoint": null,
+      "checkpoint_sha256": null,
+      "backbone": null
+    }
+  ],
+  "reported_protocol": {
+    "hardware": "1x NVIDIA A100-SXM4-80GB",
+    "provider": "Vast.ai",
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2024
+    ],
+    "test_n": 5000,
+    "max_sequence_length": 2048,
+    "precision": "AMP-bf16",
+    "batch_size_per_gpu": 32,
+    "effective_batch_size": 64,
+    "epochs": 100,
+    "total_steps": 12500,
+    "warmup_steps": 1000,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.05,
+    "peak_lr": 0.0003
+  },
+  "runnable_reference_implementation": {
+    "model_class": "MedNexusDiagnosticModel",
+    "vision_backbone": "torchvision DenseNet-121",
+    "text_backbone": "emilyalsentzer/Bio_ClinicalBERT when available",
+    "attention": "ContributionAwareAttention",
+    "parameter_count_status": "not_reported_in_historical_run_record"
+  },
+  "provenance_status": "BILLION_SCALE_CHECKPOINT_METADATA_NOT_PRESENT_IN_SUPPLIED_ARTIFACT",
+  "required_to_close_gap": [
+    "exact model/backbone identifier",
+    "checkpoint file or immutable object ID",
+    "checkpoint SHA-256",
+    "training commit",
+    "dataset split hash",
+    "environment lock",
+    "run-to-seed mapping"
+  ]
+}

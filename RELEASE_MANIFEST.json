@@ -1,0 +1,20 @@
+{
+  "release": "Med-Nexus Final 12.35B Examiner Release",
+  "release_version": "2026.10-examiner-12.35B",
+  "canonical_middle_scale_run": {
+    "run_id": "MN-RUN-02",
+    "parameters_b": 12.35,
+    "label": "12B Baseline"
+  },
+  "reported_training_images": 235000,
+  "held_out_evaluation_n": 5000,
+  "hardware": "1x NVIDIA A100-SXM4-80GB",
+  "provider": "Vast.ai",
+  "verification": {
+    "compileall": "PASS",
+    "train_help": "PASS",
+    "evaluate_help": "PASS",
+    "pytest": "13 passed"
+  },
+  "artifact_policy": "Original billion-scale binary checkpoints are not present in the recovered workspace. This release contains provenance/recovery manifests and does not fabricate model weights, checkpoint hashes, or registry identifiers."
+}

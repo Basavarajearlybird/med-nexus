@@ -1,0 +1,65 @@
+{
+  "hardware": "1x NVIDIA A100-SXM4-80GB",
+  "provider": "Vast.ai",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2024
+  ],
+  "test_n": 5000,
+  "max_sequence_length": 2048,
+  "precision": "AMP-bf16",
+  "batch_size_per_gpu": 32,
+  "effective_batch_size": 64,
+  "epochs": 100,
+  "total_steps": 12500,
+  "warmup_steps": 1000,
+  "optimizer": "AdamW",
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.05,
+  "peak_lr": 0.0003,
+  "final_run": "MN-RUN-06",
+  "final_params_b": 33.4,
+  "final_auroc": "0.962 +/- 0.001",
+  "final_auprc": "0.941 +/- 0.002",
+  "final_f1": "0.918 +/- 0.001",
+  "reported_runs": [
+    {
+      "run_id": "MN-RUN-01",
+      "label": "8B Baseline",
+      "parameters_b": 8.12
+    },
+    {
+      "run_id": "MN-RUN-02",
+      "label": "12B Baseline",
+      "parameters_b": 12.35
+    },
+    {
+      "run_id": "MN-RUN-03",
+      "label": "32B Dense Baseline",
+      "parameters_b": 32.1
+    },
+    {
+      "run_id": "MN-RUN-04",
+      "label": "+ Overlap Suppression",
+      "parameters_b": 32.65
+    },
+    {
+      "run_id": "MN-RUN-05",
+      "label": "+ Intervention DeltaLoss",
+      "parameters_b": 33.12
+    },
+    {
+      "run_id": "MN-RUN-06",
+      "label": "Full Med-Nexus (Gated)",
+      "parameters_b": 33.4
+    }
+  ],
+  "checkpoint_provenance": "not_present_in_supplied_artifact",
+  "exact_billion_scale_backbone": "not_present_in_supplied_artifact"
+}

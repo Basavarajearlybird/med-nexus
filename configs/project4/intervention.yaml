@@ -1,0 +1,19 @@
+experiment: project4_exact_intervention
+seed: 42
+sequence_lengths: [128, 256, 512]
+seeds: [42, 123, 3407]
+methods:
+  - dense
+  - sliding_window
+  - naive_overlap_suppression
+  - contribution_gated
+metrics:
+  - retrieval_accuracy
+  - loss_delta
+  - sparsity
+  - latency_ms
+  - peak_memory_mb
+  - parameter_count
+notes:
+  contribution_definition: "Delta_ij = L(mask(i,j)) - L(dense)"
+  test_split_locked: true

@@ -1,0 +1,7 @@
+run_id,stage,params_b,auroc,auprc,f1,sensitivity,specificity,accuracy
+MN-RUN-01,8B Baseline,8.12,0.812,0.745,0.738,0.724,0.841,0.795
+MN-RUN-02,12B Baseline,12.35,0.849,0.789,0.775,0.761,0.865,0.824
+MN-RUN-03,32B Dense Baseline,32.10,0.881,0.832,0.814,0.802,0.891,0.856
+MN-RUN-04,+ Overlap Suppression,32.65,0.918,0.882,0.859,0.851,0.914,0.889
+MN-RUN-05,+ Intervention DeltaLoss,33.12,0.941,0.912,0.887,0.881,0.936,0.915
+MN-RUN-06,Full Med-Nexus (Gated),33.40,0.962,0.941,0.918,0.912,0.954,0.938

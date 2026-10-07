@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Med-Nexus: Trustworthy Multimodal Medical Image Analysis"
+type: software
+authors:
+  - name: Basav
+version: "1.0.0"
+date-released: 2026-09-30
+license: MIT
